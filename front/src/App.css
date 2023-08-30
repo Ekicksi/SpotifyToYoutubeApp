@@ -1,0 +1,23 @@
+#mainContentContainer {
+  background-position: center;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#adjustmentLayer {
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,0.16010154061624648) 0%, rgba(0,0,0,0) 31%, rgba(0,0,0,0.46262254901960786) 67%, rgba(0,0,0,0.9051995798319328) 100%);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 0;
+}
+
+#playlistComponent {
+  z-index: 1;
+}

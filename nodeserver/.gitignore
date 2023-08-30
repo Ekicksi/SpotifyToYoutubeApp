@@ -1,0 +1,5 @@
+.env
+.log
+temp/
+/node_modules
+scratch/

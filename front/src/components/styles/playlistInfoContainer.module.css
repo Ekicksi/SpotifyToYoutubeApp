@@ -1,0 +1,189 @@
+.playlistContentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#playlistPicker {
+    transition: 0.5s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+    max-width: 95vw;
+    min-width: 50vw;
+    padding: 50px 0 50px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    flex-direction: column;
+    position: absolute;
+}
+
+.playlistPickerActive{
+    top: 250px;
+}
+
+.playlistPickerNotActive{
+    top: -750px;
+}
+
+
+.submitContainer {
+    margin-top: 20px;
+}
+
+.submitContainer:hover {
+    transition: 0.4s;
+    opacity: 60%;
+}
+
+#songListComponentWrapper {
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.songListComponent {
+    height: 70.5vh;
+    max-width: 70vw;
+    min-width: 70vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: ridge  0.1px rgb(255, 244, 244, 0.3);
+    /* padding: 20px; */
+    z-index: 15;
+}
+
+#songListHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    min-width: 70vw;
+    height: 3.5vw;
+    color: white;
+}
+
+#arrowUpIcon {
+    position: relative;
+    transition: 0.3s;
+    top: 0px;
+    opacity: 70%;
+    font-size: 35px;
+    color: white;
+}
+
+#arrowUpIcon:hover {
+    font-size: 40px;
+    cursor: pointer;
+    top: -5px;
+    opacity: 100%;
+
+}
+
+#listBody {
+    position: relative;
+}
+
+
+
+.row {
+    min-width: 100%;
+}
+
+.colHeader {
+    margin-left: 55px;
+}
+
+
+
+
+.col{
+    margin-left: 75px;
+    color: white;
+    padding: 15px 0 15px 0;
+}
+
+#searchBar {
+    transition: 0.3s;
+}
+
+.searchBarActive {
+    transition: 0.3s;
+    max-width: 300px;
+    opacity: 75%;
+}
+.searchBarNotActive {
+    transition: 0.3s;
+    max-width: 10px;
+    opacity: 0%;
+}
+
+/* #searchBar:hover {
+    opacity: 100%;
+    max-width: 300px;
+} */
+
+#searchIcon {
+    transition: 0.3s;
+    font-size: 35px;
+    color: white;
+    opacity: 70%;
+    cursor: pointer;
+    z-index: 10;
+}
+#searchIcon:hover {
+    font-size: 40px;
+    color: white;
+    opacity: 100%;
+}
+
+.songListComponent::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.songListComponent::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255, 0.15);
+    border-radius: 10px;
+}
+
+.songListComponent #row:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.songListComponentActive {
+    top: 1.5vh;
+}
+.songListComponentNotActive {
+    top: -100vh;
+}
+
+@media only screen and (max-width: 900px) {
+    .songListComponent {
+        max-width: 97vw;
+        min-width: 97vw;
+    }
+    #formWrapper {
+        min-width: 95vw;
+    }
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    min-width: 400px;
+}
+
+.cardElement {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    border-radius: 0
+
+}
+
