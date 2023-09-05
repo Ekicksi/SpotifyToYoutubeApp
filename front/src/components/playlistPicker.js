@@ -27,6 +27,7 @@ export const PlaylistPicker = (props) => {
                         </option>
                     ))}
                 </Form.Select>
+            </Form.Group>
                 <div className={css.submitContainer} style={{ width: "100%", display: "flex", justifyContent: "center" }}>
                     <Button onClick={props.log} style={{ width: "150px", backgroundColor: "rgba(61, 140, 70, 0.8)", border: "none", padding: "15px" }} className="text-center mt-4" variant="success">
                         Refresh access token
@@ -36,7 +37,7 @@ export const PlaylistPicker = (props) => {
                     </Button>
                 </div>
 
-            </Form.Group>
+            
         </Form>
     )
 }

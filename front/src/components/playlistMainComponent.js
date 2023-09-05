@@ -38,7 +38,7 @@ const playlistInfoComponent = (props) => {
                 return getUserPlaylists(profile.id)
             })
             .then((playlists) => {
-                setPlaylists(playlists)
+                handleSetPlaylists(playlists)
                 setPlaylistsInfoLoaded(true)
                 console.log(playlists)
             })
@@ -69,6 +69,16 @@ const playlistInfoComponent = (props) => {
     const handleLogout = () => {
         localStorage.clear();
         props.setUserAuthorized(false);
+    }
+
+    const handleSetPlaylists = (playlists) => {
+        //Limit playlist name to 35 characters to prevent huge option dropdowns before setting playlists
+        playlists.items.forEach(item => {
+            if(item.name.length > 40){
+                item.name = item.name.substring(0, 35) + "..."
+            }
+        })
+        setPlaylists(playlists)
     }
 
     return (
